@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.div`
+export const UserWrapper = styled.div`
 display: flex;
 align-items: baseline;
 gap: 20px;

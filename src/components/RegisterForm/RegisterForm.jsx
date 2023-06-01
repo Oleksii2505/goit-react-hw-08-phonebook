@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'components/Redux/Auth/operations';
-import { RegForm, Button } from './RegisterForm.styled';
+import { RegContainer, RegForm, Button, Input } from './RegisterForm.styled';
 
 
 export const RegisterForm = () => {
@@ -20,18 +20,21 @@ export const RegisterForm = () => {
   };
 
   return (
-    <RegForm onSubmit={onFormSubmit} autoComplete="off">
+    <RegContainer>
+      <RegForm onSubmit={onFormSubmit} autoComplete="off">
       <label>
-        <input type="text" name="name" placeholder="Name" />
+        <Input type="text" name="name" placeholder="Name" />
       </label>
       <label>
-        <input type="email" name="email" placeholder="Email" />
+        <Input type="email" name="email" placeholder="Email" />
       </label>
       <label>
-        <input type="password" name="password" placeholder="Password" />
+        <Input type="password" name="password" placeholder="Password" />
       </label>
       
-      <Button type="submit">Register</Button>
-    </RegForm>
+        <Button type="submit">Register</Button>
+      </RegForm>
+    </RegContainer>
+    
   );
 };

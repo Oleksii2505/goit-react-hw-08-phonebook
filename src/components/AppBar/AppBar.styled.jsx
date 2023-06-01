@@ -2,23 +2,28 @@ import styled from '@emotion/styled';
 import { NavLink } from "react-router-dom"; 
 
 export const Header = styled.header`
-padding: 10px 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+padding: 15px 25px;
+background-color: #5df0eb;
+box-shadow: 10px -15px 110px -9px rgba(0,0,0,0.75);
 margin-bottom: 12px;
 `;
 
 export const Link = styled(NavLink)`
 cursor: pointer;
-font-size: 20px;
-line-height: 1.5;
-font-weight; 500;
-text-decoration: none;
+font-size: 25px;
+line-height: 2;
+font-weight: 500;
 color: inherit;
+text-decoration: none;
 &.active {
-    color: #4676D7;
+    color: #4321b0;
 }
 :hover,
 :focus {
-    color: #4676D7;
+    color: #4321b0;
 }   
 `;
