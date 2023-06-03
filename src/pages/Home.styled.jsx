@@ -4,9 +4,12 @@ export const HomeContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 15px;
 `;
 
 export const HomeTitle = styled.h1`
-font-size: 50px;
+color: #1436a6;
+margin-top: 200px;
+font-size: 80px;
+text-transform: uppercase; 
+letter-spacing: 2px;
 `;

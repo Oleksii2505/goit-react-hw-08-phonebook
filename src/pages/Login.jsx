@@ -1,11 +1,11 @@
 import LoginForm from 'components/LoginForm/LoginForm';
-import { RegisterContainer } from './Register.styled';
+import { RegTitle, RegisterContainer } from './Register.styled';
 
 
 const Login = () => {
   return (
     <RegisterContainer>
-        <h2>Sing In</h2>
+        <RegTitle>Sing In</RegTitle>
         <LoginForm />
     </RegisterContainer>
   );

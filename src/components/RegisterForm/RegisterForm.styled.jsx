@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const RegContainer = styled.div`
-min-height: calc(100vh - 300px);
+min-height: calc(20vh - 100px);
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
@@ -24,8 +24,8 @@ export const Input = styled.input`
 padding: 10px;
 font-size: 16px;
 border: none;
-border-radius: 2px;
-width: 350px;
+border-radius: 4px;
+width: 400px;
 `;
 
 export const Button = styled.button`
@@ -33,13 +33,13 @@ appearance: none;
 cursor: pointer;
 border: 0;
 border-radius: 4px;
-background: #4676D7;
+background: #04c7a3;
 color: #fff;
 padding: 10px;
-font-size: 16px;
+font-size: 20px;
 text-transform: capitalize;
 :hover,
 :focus {
-    background: #1d49aa;
+    background: #039177;
 }
 `;
