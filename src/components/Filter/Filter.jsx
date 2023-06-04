@@ -6,6 +6,9 @@ import { selectFilteredContacts } from 'Redux/selectors';
 export const Filter = () => {
     const dispatch = useDispatch();
     const filter = useSelector(selectFilteredContacts)
+    const changeFilter = e => {
+        dispatch(getFilter(e.currentTarget.value.toLowerCase()));
+      };
     return (
         <Label>
             Find contact by name
@@ -14,8 +17,8 @@ export const Filter = () => {
                 name="name"
                 placeholder="Enter contact name"
                 value={filter}
-                onChange={(e) => dispatch(getFilter(e.target.value))}
-                pattern="^[a-zA-Zа-яіїєґА-ЯІЇЄҐ]+(([' -][a-zA-Zа-яіїєґА-ЯІЇЄҐ ])?[a-zA-Zа-яіїєґА-ЯІЇЄҐ]*)*$"
+                onChange={changeFilter}
+                // pattern="^[a-zA-Zа-яіїєґА-ЯІЇЄҐ]+(([' -][a-zA-Zа-яіїєґА-ЯІЇЄҐ ])?[a-zA-Zа-яіїєґА-ЯІЇЄҐ]*)*$"
             />
         </Label>
     );

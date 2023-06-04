@@ -22,10 +22,10 @@ const ContactList = () => {
     return (
         <List>
             {isLoading && !error && <b>Loading...</b>}
-            {filteredContacts.map(({ id, name, phone }) =>  {
+            {filteredContacts.map(({ id, name, number }) =>  {
                 return (
                     <Item key={id}>
-                        {name}: {phone}{' '}
+                        {name}: {number}{' '}
                         <DeleteBtn
                             type="button"
                             onClick={() => onClickDelete(id)}
