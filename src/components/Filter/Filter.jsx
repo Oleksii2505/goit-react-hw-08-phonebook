@@ -1,7 +1,7 @@
 import { Input, Label } from './Filter.styled';
-import { getFilter } from 'Redux/filterSlice';
+import { getFilter } from 'Redux/Contacts/filterSlice';
 import { useDispatch, useSelector} from 'react-redux';
-import { selectFilteredContacts } from 'Redux/selectors';
+import { selectFilteredContacts } from 'Redux/Contacts/selectors';
 
 export const Filter = () => {
     const dispatch = useDispatch();
@@ -18,7 +18,6 @@ export const Filter = () => {
                 placeholder="Enter contact name"
                 value={filter}
                 onChange={changeFilter}
-                // pattern="^[a-zA-Zа-яіїєґА-ЯІЇЄҐ]+(([' -][a-zA-Zа-яіїєґА-ЯІЇЄҐ ])?[a-zA-Zа-яіїєґА-ЯІЇЄҐ]*)*$"
             />
         </Label>
     );

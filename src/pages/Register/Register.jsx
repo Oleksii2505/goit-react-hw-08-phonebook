@@ -4,7 +4,7 @@ import { RegisterContainer, RegTitle } from "./Register.styled";
 const Register = () => {
     return (
       <RegisterContainer>
-          <RegTitle>Sing Up</RegTitle>
+          <RegTitle>Sign Up</RegTitle>
           <RegisterForm />    
       </RegisterContainer>
     );

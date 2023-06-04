@@ -9,10 +9,10 @@ import {Layout} from 'components/Layout/Layout';
 import { PrivateRoute } from 'components/PrivateRoute';
 import { RestrictedRoute } from 'components/RestrictedRoute';
 
-const Home = lazy(() => import("pages/Home"));
-const Register = lazy(() => import("pages/Register"));
-const Login = lazy(() => import("pages/Login"));
-const ContactsBook = lazy(() => import("pages/ContactsBook"));
+const Home = lazy(() => import("pages/Home/Home"));
+const Register = lazy(() => import("pages/Register/Register"));
+const Login = lazy(() => import("pages/Login/Login"));
+const ContactsBook = lazy(() => import("pages/ContactsBook/ContactsBook"));
 
 export const App = () => {
     const dispatch = useDispatch();

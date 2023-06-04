@@ -1,42 +1,14 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Label, Input, SubmitBtn } from './ContactForm.styled';
-import { addContact } from 'Redux/operations';
-import { selectContacts } from 'Redux/selectors';
+import { addContact } from 'Redux/Contacts/operations';
+import { selectContacts } from 'Redux/Contacts/selectors';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const dispatch = useDispatch();
     const contacts = useSelector(selectContacts)
-
-    // const onFormSubmit = e => {
-    //     e.preventDefault();
-    //     const contact = Array.isArray(contacts) && contacts.find(
-    //       (c) =>
-    //         c.name.toLowerCase() === name.toLowerCase() ||
-    //         c.phone.toLowerCase() === phone.toLowerCase()
-    //     );
-    //     if (contact) {
-    //       if (contact.name.toLowerCase() === name.toLowerCase()) {
-    //         return alert(`${name} is already in contact`);
-    //       } else if (contact.phone === phone) {
-    //         return alert(`${phone} is already in contact`);
-    //       }
-    //     };
-    //     dispatch(
-    //       addContact({
-    //         name: name,
-    //         number: phone,
-    //       })
-    //     );
-    //     resetForm();
-    //   };
-
-    //   const resetForm = () => {
-    //     setName('');
-    //     setPhone('');
-    //   };
 
     const onFormSubmit = e => {
       e.preventDefault();
@@ -51,7 +23,6 @@ const ContactForm = () => {
         name: name,
         number: number,
       }));
-      alert(`Contact ${name} added successfully`);
 
       setName('');
       setNumber('');
