@@ -5,8 +5,8 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useAuth } from 'hooks';
-import {selectError} from 'components/Redux/selectors';
-import {fetchContacts} from 'components/Redux/operations';
+import { selectError } from 'Redux/selectors';
+import { fetchContacts } from 'Redux/operations';
 // import Loader from 'components/Loader';
 
 const ContactsBook = () => {

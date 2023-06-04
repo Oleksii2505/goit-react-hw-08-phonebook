@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { logOut } from 'components/Redux/Auth/operations';
+import { logOut } from 'Redux/Auth/operations';
 import { useAuth } from 'hooks';
 import { UserWrapper, LogOutButton, UserMes } from "./UserMenu.styled";
 
